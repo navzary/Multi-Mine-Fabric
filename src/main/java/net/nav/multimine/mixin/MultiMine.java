@@ -228,7 +228,7 @@ abstract class MultiMineClient implements ObjIntConsumer<Object> {
     @Redirect(method = {"attackBlock","updateBlockBreakingProgress"},at = @At(value = "INVOKE",
             target = "Lnet/minecraft/client/network/ClientPlayerInteractionManager;isCurrentlyBreaking(Lnet/minecraft/util/math/BlockPos;)Z"))
     private boolean multimine$sameBlock(ClientPlayerInteractionManager manager,BlockPos pos) {
-        return pos.equals(currentBreakingPos);
+        return breakingBlock && pos.equals(currentBreakingPos);
     }
 }
 @Mixin(ClientWorld.class) abstract class MultiMineClientWorld {
