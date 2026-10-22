@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "multi-mine",
+  "version": "${version}",
+  "name": "Multi Mine",
+  "description": "Mine blocks together without losing progress when you stop.",
+  "authors": ["nav"],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/multi-mine-fabric",
+    "curseforge": "https://www.curseforge.com/minecraft/mc-mods/multi-mine-fabric",
+    "sources": "https://github.com/navzary/multi-mine-fabric"
+  },
+  "license": "ARR",
+  "icon": "assets/multi-mine/icon.png",
+  "environment": "*",
+  "mixins": ["multi-mine.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
